@@ -19,12 +19,6 @@ import loss
 import network
 from CRLoss import CRconLoss, ClassRelationships
 from autoaugment import CIFAR10Policy as ImageNetPolicy
-# from AA import TrivialAugment as ImageNetPolicy1
-# from AA import TrivialAugment as ImageNetPolicy2
-# from autoaugment import ImageNetPolicy as ImageNetPolicy1
-# from autoaugment import ImageNetPolicy as ImageNetPolicy2
-# from autoaugment import SVHNPolicy as ImageNetPolicy1
-# from autoaugment import SVHNPolicy as ImageNetPolicy2
 from data_list import ImageList_train, ImageList_test
 from VAT import VAT
 
