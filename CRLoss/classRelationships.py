@@ -22,7 +22,6 @@ class ClassRelationships:
         Ct = self.e * self.C_label + (1 - self.e) * self.C_fea
         self.C = self.lamda * self.C + (1 - self.lamda) * Ct
 
-
     def set_C_label(self, pre):
         nor = lambda x: x / torch.sqrt(torch.sum(x ** 2, axis=0))
         nor_pre = nor(pre)

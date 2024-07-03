@@ -11,10 +11,6 @@ import torchvision
 class ImageList_train(Dataset):
     def __init__(self, image_list, labels=None, transform=None, target_transform=None, mode='RGB'):
         imgs = make_dataset(image_list, labels)
-        if len(imgs) == 0:
-            raise (RuntimeError("Found 0 images in subfolders of: " + root + "\n"
-                                                                             "Supported image extensions are: " + ",".join(
-                IMG_EXTENSIONS)))
 
         self.imgs = imgs
         self.transform = transform
