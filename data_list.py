@@ -30,12 +30,10 @@ class ImageList_train(Dataset):
         if self.transform is not None:
             img_w = self.transform[0](img)
             img_s = self.transform[1](img)
-            img_s1 = self.transform[2](img)
 
         if self.target_transform is not None:
             target = self.target_transform(target)
-        # We train the DaC model with two strong augmentations, you can choose to use only one strong augmentation
-        return img_w, img_s, img_s1, target, index
+        return img_w, img_s, target, index
 
     def __len__(self):
         return len(self.imgs)
